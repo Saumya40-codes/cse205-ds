@@ -1,8 +1,6 @@
 class Solution {
     public int findKthPositive(int[] arr, int k) {
 
-        // brute force
-
         int pnt = 0;
 
         for(int i = 1; i <= arr[arr.length-1] ; i++){
@@ -25,17 +23,5 @@ class Solution {
             }
         }
         return arr[arr.length-1] + k;
-
-        // for(int i = 0; i < arr.length ; i++){
-        //     if(arr[i] <= k){
-        //         k++;
-        //     }
-
-        //     else{
-        //         return k;
-        //     }
-        // }
-
-        // return k;
     }
 }
